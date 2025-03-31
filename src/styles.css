@@ -1,2 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@plugin "daisyui";
+@plugin "@iconify/tailwind4";
+
+:host {
+  display: block;
+  min-height: 100vh;
+}
+.light {
+  background-color: #fdf8f8;
+  color: #1c1b1c;
+  --primary: #6750a4;
+  --on-primary: #ffffff;
+  --primary-container: #e9ddff;
+  --on-primary-container: #22005d;
+  --secondary: #625b70;
+  --on-secondary: #ffffff;
+  --neutral-variant: #79767b;
+  --neutral-variant20: #322f34;
+  --surface-container: #f1eded;
+}
+.dark {
+  background-color: #141313;
+  color: #ffffff;
+  --primary: #0cba49;
+  --on-primary: #381e72;
+  --primary-container: #4f378a;
+  --on-primary-container: #e9ddff;
+  --secondary: #ccc2db;
+  --on-secondary: #332d40;
+  --neutral-variant: #79767b;
+  --neutral-variant20: #322f34;
+  --surface-container: #201f20;
+}
